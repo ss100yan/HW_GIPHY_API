@@ -30,7 +30,8 @@ console.log(i)
         $("#buttons").append(button); 
         console.log(i)
         
-
+        Animals.push(input);
+        console.log(Animals)
         
       });
 
