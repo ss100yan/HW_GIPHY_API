@@ -8,11 +8,13 @@ $( document ).ready(function() {
     console.log( "ready!" );
     var button;
 for (i=0; i<Animals.length; i++){
-    button=$('<input/>').attr({
+    button=$('<button/>').attr({
     type: "button",
+    class:"btn btn-outline-secondary",
     id: Animals[i],
     value: Animals[i]
-});
+}).text(Animals[i]);
+    
 $("#buttons").append(button); 
 console.log(i)
 
@@ -21,11 +23,12 @@ console.log(i)
         
         input=$( "input[class=form-control]" ).val();
 
-        button=$('<input/>').attr({
+        button=$('<button/>').attr({
             type: "button",
+            class:"btn btn-outline-secondary",
             id: input,
             value: input
-        });
+        }).text(input);
     
         $("#buttons").append(button); 
         console.log(i)
@@ -33,7 +36,14 @@ console.log(i)
         Animals.push(input);
         console.log(Animals)
         
+        
       });
+
+//       var bns = $("input");
+// bns.on("click", function() {
+//     alert("you clicked");
+
+});
 
      
      title = Animals[0];
@@ -66,4 +76,4 @@ console.log(i)
 
 
 
-    });
+    
