@@ -4,7 +4,13 @@ var Animals = ["dog","cat","rabit","hamster","horse","swan","mouse","ant","bear"
 var i ;
 var input;
 var title;
+var bns;
+
+
 $( document ).ready(function() {
+
+    
+    
     console.log( "ready!" );
     var button;
 for (i=0; i<Animals.length; i++){
@@ -21,6 +27,8 @@ console.log(i)
     };
     $("#button-addon1").click(function() {
         
+        bns = $("button");
+
         input=$( "input[class=form-control]" ).val();
 
         button=$('<button/>').attr({
@@ -39,14 +47,12 @@ console.log(i)
         
       });
 
-//       var bns = $("input");
-// bns.on("click", function() {
-//     alert("you clicked");
 
-});
 
-     
-     title = Animals[0];
+      $(document).on('click', '.btn' ,function (event) {
+        //Process button click event
+        
+    title = this.id;
      var queryURL ="http://api.giphy.com/v1/gifs/search?q="+ title +"&api_key=dc6zaTOxFJmzC&limit=10";
     //   "https://www.omdbapi.com/?t=" + title + "&y=&plot=short&apikey=trilogy";
  
@@ -74,6 +80,5 @@ console.log(i)
   
 });
 
-
-
-    
+});
+}); 
