@@ -16,7 +16,7 @@ $( document ).ready(function() {
 for (i=0; i<Animals.length; i++){
     button=$('<button/>').attr({
     type: "button",
-    class:"btn btn-outline-secondary",
+    class:"btn btn-primary",
     id: Animals[i],
     value: Animals[i]
 }).text(Animals[i]);
@@ -33,7 +33,7 @@ console.log(i)
 
         button=$('<button/>').attr({
             type: "button",
-            class:"btn btn-outline-secondary",
+            class:"btn btn-primary",
             id: input,
             value: input
         }).text(input);
@@ -72,8 +72,9 @@ console.log(i)
 
     var Image = $("<img>");
     Image.attr("src", results[i].images.fixed_height.url);
-
-    gifDiv.prepend(Image);
+    var Rating = results[i].rating;
+    console.log(Rating);
+    gifDiv.prepend(Image,Rating);
 
     $("#gifs").prepend(gifDiv);
   }
