@@ -6,31 +6,41 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/main.js"></script>
 </head>
 <body>
+        <iframe src="./assets/music/bensound-clearday.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
     <div><br></div>
     <div class="row">
-            <div class="col-12">
+            <div class="col-8">
                 <div id="buttons"></div>
             </div>
+            <div class="col-4">    
+                    <img id="giphy" src="./assets/Images/powered_by_giphy.gif" >
+                </div>
         </div>
+        <div><br><br></div>
         <div class="row">
             <div class="col-9">
-                <div id="gifs"></div>
+                <div id="gifs" style="font-family: 'Gloria Hallelujah', cursive;"></div>
             </div>
-            <div class="col-3">
-                <h4>Add an animal</h4>
+            <div class="col-3" >
+                    <div class="jumbotron">
+                <h4 style="font-family: 'Gloria Hallelujah', cursive;" >Add an animal</h4>
                     <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                              <button class="btn btn-outline-primary" type="button" id="button-addon1">Submit</button>
                             </div>
                             <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
                           </div>
-    
+                          <div class="row">
+                          <button class="btn btn-outline-primary btn-lg" type="button" id="button-addon1">Add</button>
+                        </div>
+                        </div>
+                        
+                       
 </body>
 </html>

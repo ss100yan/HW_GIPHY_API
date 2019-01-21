@@ -70,6 +70,7 @@ console.log(i)
    for (var i = 0; i < results.length; i++) {
     var gifDiv = $("<figure>");
     var gifDiv2 = $("<figcaption>");
+    var gifDiv3 = $("<figcaption>");
     var Image = $("<img>");
 
     
@@ -78,20 +79,22 @@ console.log(i)
         still: results[i].images.fixed_height_still.url,
         animate: results[i].images.fixed_height.url,
         state: 'still',
-        class: 'gif'
+        class: 'gif img-thumbnail'
     });
     
     
     
 
     var Rating = results[i].rating;
-
+    var Title = results[i].title;
     console.log(Rating);
-
+    console.log(Title);
+    gifDiv3.prepend("Title: "+Title);
     gifDiv2.prepend("Rating: "+Rating);
     
-    
+    gifDiv.prepend(gifDiv3);
     gifDiv.prepend(gifDiv2);
+
     gifDiv.prepend(Image);
           
     $("#gifs").prepend(gifDiv);

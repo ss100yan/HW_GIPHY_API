@@ -8,3 +8,13 @@ button{
 .input-group{
     margin-right: 0.2%;
 }
+body {
+    background-image: url("tic-tac-toe.png");
+    
+   }
+   #giphy{
+       float: right;
+       margin: 1%;
+       height:10%;
+        width:60%;
+   }
