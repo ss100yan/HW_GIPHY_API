@@ -68,15 +68,17 @@ console.log(i)
     var results = response.data;
 
    for (var i = 0; i < results.length; i++) {
-    var gifDiv = $("<div>");
-
+    var gifDiv = $("<figure>");
+    var gifDiv2 = $("<figcaption>");
     var Image = $("<img>");
     Image.attr("src", results[i].images.fixed_height.url);
     var Rating = results[i].rating;
     console.log(Rating);
-    gifDiv.prepend(Image,Rating);
+    gifDiv.prepend(Image);
+    gifDiv2.prepend("Rating: "+Rating);
 
     $("#gifs").prepend(gifDiv);
+    $("#gifs").prepend(gifDiv2);
   }
   
 });
