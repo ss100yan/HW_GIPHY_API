@@ -2,4 +2,7 @@
 
  github-page: https://ss100yan.github.io/Portfolio-BS/
 
- portfolio:  https://ss100yan.github.io/HW_GIPHY_API/
+ (Chrome blocks the page, needs to be enabled)
+
+ portfolio:  https://ss100yan.github.io/HW_GIPHY_API/  
+  
