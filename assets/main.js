@@ -16,8 +16,8 @@ $( document ).ready(function() {
 for (i=0; i<Animals.length; i++){
     button=$('<button/>').attr({
     type: "button",
-    class:"btn btn-primary",
-    id: Animals[i],
+    class:"btn btn-outline-primary",
+    id: "btns",
     value: Animals[i]
 }).text(Animals[i]);
     
@@ -33,8 +33,8 @@ console.log(i)
 
         button=$('<button/>').attr({
             type: "button",
-            class:"btn btn-primary",
-            id: input,
+            class:"btn btn-outline-primary",
+            id: "btns",
             value: input
         }).text(input);
     
@@ -49,10 +49,10 @@ console.log(i)
 
 
 
-      $(document).on('click', '.btn' ,function (event) {
+      $(document).on('click', '#btns' ,function (event) {
         //Process button click event
         
-    title = this.id;
+    title = this.value;
      var queryURL ="http://api.giphy.com/v1/gifs/search?q="+ title +"&api_key=dc6zaTOxFJmzC&limit=10";
     //   "https://www.omdbapi.com/?t=" + title + "&y=&plot=short&apikey=trilogy";
  
@@ -73,12 +73,18 @@ console.log(i)
     var Image = $("<img>");
     Image.attr("src", results[i].images.fixed_height.url);
     var Rating = results[i].rating;
-    console.log(Rating);
-    gifDiv.prepend(Image);
-    gifDiv2.prepend("Rating: "+Rating);
 
+    console.log(Rating);
+
+    gifDiv2.prepend("Rating: "+Rating);
+    
+    
+    gifDiv.prepend(gifDiv2);
+    gifDiv.prepend(Image);
+    
+      
     $("#gifs").prepend(gifDiv);
-    $("#gifs").prepend(gifDiv2);
+    
   }
   
 });
