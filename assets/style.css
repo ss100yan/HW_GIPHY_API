@@ -1,4 +1,10 @@
 figure{
     float: left;
-     
+     margin: 1%;
+}
+button{
+    margin: 0.2%;
+}
+.input-group{
+    margin-right: 0.2%;
 }

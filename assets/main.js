@@ -78,11 +78,10 @@ console.log(i)
 
     gifDiv2.prepend("Rating: "+Rating);
     
-    
-    gifDiv.prepend(gifDiv2);
     gifDiv.prepend(Image);
+    gifDiv.prepend(gifDiv2);
     
-      
+          
     $("#gifs").prepend(gifDiv);
     
   }
