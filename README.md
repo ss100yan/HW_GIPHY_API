@@ -1,2 +1,5 @@
 # HW_GIPHY_API
- https://ss100yan.github.io/Portfolio-BS/
+
+ github-page: https://ss100yan.github.io/Portfolio-BS/
+
+ portfolio:  https://ss100yan.github.io/HW_GIPHY_API/
