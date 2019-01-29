@@ -53,7 +53,7 @@ console.log(i)
         //Process button click event
         
     title = this.value;
-     var queryURL ="http://api.giphy.com/v1/gifs/search?q="+ title +"&api_key=dc6zaTOxFJmzC&limit=10";
+     var queryURL ="https://api.giphy.com/v1/gifs/search?q="+ title +"&api_key=dc6zaTOxFJmzC&limit=10";
     //   "https://www.omdbapi.com/?t=" + title + "&y=&plot=short&apikey=trilogy";
  
      $.ajax({
